@@ -96,6 +96,11 @@
         <footer>
             <p><em>Copyright The Code Review</em></p>
         </footer>
-        <script> </script>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('If this were a real form, it would have submitted! :) ');
+            });
+        </script>
     </body>
 </html>
